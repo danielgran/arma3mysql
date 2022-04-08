@@ -19,8 +19,5 @@ string callExtension(string& param) {
   } catch (exception e){
     dlclose(libhandle);
   }
-
   return "asd";
-
-
 }
