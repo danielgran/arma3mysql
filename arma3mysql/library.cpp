@@ -2,6 +2,7 @@
 #include "jdbc/cppconn/resultset.h"
 #include "jdbc/cppconn/statement.h"
 #include <iostream>
+#include <cstring>
 
 extern "C"
 {

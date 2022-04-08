@@ -8,3 +8,5 @@ add_library(arma3mysql SHARED library.cpp)
 
 target_link_libraries(arma3mysql mysqlcppconn)
 target_link_libraries(arma3mysql ssl.1.1)
+
+# Install mysqlconnector, and link openssl

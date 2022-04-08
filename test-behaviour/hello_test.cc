@@ -1,4 +1,3 @@
-#include <dlfcn.h>
 #include "gtest/gtest.h"
 #include "library/testlib.h"
 
