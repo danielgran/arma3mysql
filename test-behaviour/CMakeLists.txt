@@ -4,6 +4,7 @@ project(arma3mysql_test)
 # GoogleTest requires at least C++11
 set(CMAKE_CXX_STANDARD 11)
 
+include_directories(arma3mysql PUBLIC library)
 include(FetchContent)
 FetchContent_Declare(
         googletest
@@ -18,6 +19,7 @@ enable_testing()
 add_executable(
         hello_test
         hello_test.cc
+        library/testlib.cpp
 )
 target_link_libraries(
         hello_test

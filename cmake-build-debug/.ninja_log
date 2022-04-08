@@ -1,0 +1,16 @@
+# ninja log v5
+0	1083	1649441721891830650	arma3mysql/CMakeFiles/arma3mysql.dir/library.cpp.o	ef054abd2a1b82b1
+1086	1153	1649441721968553728	arma3mysql/libarma3mysql.dylib	2eddd5ecb57b8a5
+0	832	1649441744776204243	test-behaviour/CMakeFiles/hello_test.dir/library/testlib.cpp.o	116e935fe8398343
+0	1941	1649441745876194771	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	7cfd4031fa7579f
+0	2041	1649441745983229256	test-behaviour/CMakeFiles/hello_test.dir/hello_test.cc.o	cbfca192a7532f41
+1	4147	1649441748084573488	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	edf7663c18e4e962
+4147	4204	1649441748156566000	lib/libgtestd.a	d0333739ee95afc6
+4204	4236	1649441748188726000	lib/libgtest_maind.a	93a2c5229318f668
+3	434	1649441805014706413	test-behaviour/CMakeFiles/hello_test.dir/library/testlib.cpp.o	116e935fe8398343
+3	922	1649441805499166923	test-behaviour/CMakeFiles/hello_test.dir/hello_test.cc.o	cbfca192a7532f41
+3	448	1649441842843844245	test-behaviour/CMakeFiles/hello_test.dir/library/testlib.cpp.o	116e935fe8398343
+2	909	1649441843302655200	test-behaviour/CMakeFiles/hello_test.dir/hello_test.cc.o	cbfca192a7532f41
+909	1244	1649441843642074079	test-behaviour/hello_test	afba35c8f879c654
+909	1244	1649441843642074079	test-behaviour/hello_test[1]_tests.cmake	afba35c8f879c654
+909	1244	1649441843642074079	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/test-behaviour/hello_test[1]_tests.cmake	afba35c8f879c654

@@ -1,19 +1,13 @@
 #include <dlfcn.h>
 #include "gtest/gtest.h"
+#include "library/testlib.h"
 
 TEST(HelloTest, BasicAssertions) {
 
 
-  void *libhandle = dlopen("../arma3mysql/libarma3mysql.dylib", RTLD_LAZY);
+  string a = callExtension((string &) "test");
 
-  void (*func)(char*, int, const char*);
-  func = (void (*)(char*, int, const char*))dlsym(libhandle, "RVExtension");
-
-  char* a = (char*)malloc(10);
-
-  func(a, 100, "test");
-
-  printf("%s", a);
+  printf("%s", a.c_str());
 
 
 // Expect two strings not to be equal.
