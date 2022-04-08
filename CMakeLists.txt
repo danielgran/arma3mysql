@@ -4,3 +4,11 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_subdirectory(arma3mysql)
 add_subdirectory(test-behaviour)
+
+if (APPLE)
+    add_compile_definitions(__APPLE__)
+endif()
+
+if(UNIX AND NOT APPLE)
+    add_compile_definitions(LINUX)
+endif()
