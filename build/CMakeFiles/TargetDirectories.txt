@@ -1,3 +1,0 @@
-/Users/danielgran/Projects/arma3mysql/build/CMakeFiles/arma3mysql.dir
-/Users/danielgran/Projects/arma3mysql/build/CMakeFiles/edit_cache.dir
-/Users/danielgran/Projects/arma3mysql/build/CMakeFiles/rebuild_cache.dir
