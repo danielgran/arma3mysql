@@ -1,0 +1,16 @@
+# ninja log v5
+1045	1159	1649416925031634856	arma3mysql	1021eee1898c33d3
+3	1044	1649416924907373043	CMakeFiles/arma3mysql.dir/library.cpp.o	7cdda210a579138f
+0	65	1649418906480437385	build.ninja	8405b749e7d9462b
+0	1326	1649418908323919334	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	73b1702c47046eca
+1	4109	1649418911102500852	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	51450f0c7d6f05d4
+3	65	1649418922719588000	lib/libgtestd.a	d0333739ee95afc6
+65	112	1649418922767018000	lib/libgtest_maind.a	93a2c5229318f668
+3	1192	1649418923829983656	CMakeFiles/hello_test.dir/hello_test.cc.o	db73edf64033c4ef
+1193	1586	1649418924239795323	hello_test	f9a418781fe1af68
+1193	1586	1649418924239795323	hello_test[1]_tests.cmake	f9a418781fe1af68
+1193	1586	1649418924239795323	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/hello_test[1]_tests.cmake	f9a418781fe1af68
+3	1460	1649418945273866816	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	2275d0abb0dd56
+2	2136	1649418945946304780	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	38c9b63cfb63973
+2136	2185	1649418946008049000	lib/libgmockd.a	69d821145fd7471a
+2185	2219	1649418946041831000	lib/libgmock_maind.a	deb5ebc48238cb8f
