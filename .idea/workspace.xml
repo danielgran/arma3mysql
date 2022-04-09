@@ -17,16 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a59c3c0e-b4bd-4680-b52d-ef704a31edcb" name="Changes" comment="Restructured">
-      <change afterPath="$PROJECT_DIR$/src/arma3mysqltest/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arma3mysql/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysql/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arma3mysql/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysql/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/hello_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/hello_test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/mysql/MySQLConnectionTest.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/mysql/MySQLConnectionTest.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +93,7 @@
       <recent name="$PROJECT_DIR$/test-behaviour" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.Library">
+  <component name="RunManager" selected="Google Test.Initialisation.Integration">
     <configuration name="All in arma3mysql_tst" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -178,7 +169,7 @@
       <workItem from="1649503302249" duration="1852000" />
       <workItem from="1649506440418" duration="7999000" />
       <workItem from="1649522256762" duration="380000" />
-      <workItem from="1649522652654" duration="4414000" />
+      <workItem from="1649522652654" duration="5091000" />
     </task>
     <task id="LOCAL-00001" summary="Changes and build to so file">
       <created>1649427360662</created>

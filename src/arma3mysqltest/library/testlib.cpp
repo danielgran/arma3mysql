@@ -5,7 +5,7 @@
 #define PATH "../arma3mysql/libarma3mysql.dylib"
 #endif
 #ifdef __linux__
-#define PATH "../arma3mysql/libarma3mysql.so"
+#define PATH "../arma3mysql/libarma3mysql_lib.so"
 #endif
 
 string testlib::callExtension(string& param) {
