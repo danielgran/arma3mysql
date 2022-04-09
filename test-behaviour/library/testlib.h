@@ -4,4 +4,7 @@
 
 using namespace std;
 
-string callExtension(string&);
+namespace testlib{
+    string callExtension(string&);
+}
+

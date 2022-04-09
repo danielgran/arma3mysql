@@ -13,6 +13,21 @@ int RVExtensionArgs(char *output, int outputSize, const char *function, const ch
 
 using namespace std;
 
+static int alreadyLaunched = 0;
+
 void RVExtension(char *output, int outputSize, const char *function) {
-  strcpy(output, "Hello World.");
+
+  if (strcmp(function, "version") == 0){
+    strcpy(output, "1.0");
+    return;
+  }
+
+
+  if(alreadyLaunched)
+    strcpy(output, "I was not launched the first time");
+  else {
+    strcpy(output, "Hello World");
+    alreadyLaunched = 1;
+
+  }
 }

@@ -20,6 +20,7 @@ add_executable(
         hello_test
         hello_test.cc
         library/testlib.cpp
+        library/string/helper.cpp
 )
 target_link_libraries(
         hello_test
