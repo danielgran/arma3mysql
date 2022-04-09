@@ -4,12 +4,21 @@
 
 using namespace std;
 
-TEST(Initialisation, BasicAssertions) {
+TEST(Initialisation, Integration) {
   string callparam = "version";
   string a = testlib::callExtension(callparam);
 
   string find = ".";
   bool contains_string = stringlib::contains(a, find);
   EXPECT_TRUE(contains_string);
+
+}
+
+
+TEST(Connection, Integration) {
+    string callparam = "database add root@192.168.59.1";
+    string return_string = testlib::callExtension(callparam);
+
+    ASSERT_EQ(return_string, "ok");
 
 }

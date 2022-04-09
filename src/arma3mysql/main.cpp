@@ -25,7 +25,7 @@ void RVExtension(char *output, int outputSize, const char *function) {
   if(alreadyLaunched)
     strcpy(output, "I was not launched the first time");
   else {
-    strcpy(output, "Hello World");
+    strcpy(output, "Hello aWorld");
     alreadyLaunched = 1;
 
   }

@@ -1,11 +1,8 @@
-include_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/include)
-link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64)
-link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64/private)
-#add_executable(arma3mysql library.cpp)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.h *.cpp)
 
-add_library(arma3mysql SHARED library.cpp)
+set(SOURCES ${SOURCES})
+add_executable(${BINARY}_run ${SOURCES})
 
-target_link_libraries(arma3mysql mysqlcppconn)
-target_link_libraries(arma3mysql ssl.1.1)
+add_library(${BINARY}_lib SHARED ${SOURCES})
 
-# Install mysqlconnector, and link openssl
+#apt install aptitude libboost-all-dev

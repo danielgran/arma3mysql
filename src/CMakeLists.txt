@@ -1,13 +1,8 @@
+set(BINARY ${CMAKE_PROJECT_NAME})
+
+
+include_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/include)
+link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64)
+
 add_subdirectory(arma3mysql)
-add_subdirectory(test-behaviour)
-
-if (APPLE)
-    add_definitions(-D__APPLE__)
-    message(wir sind auf einem)
-    add_compile_definitions(__APPLE__=TRUE)
-endif()
-
-if(UNIX AND NOT APPLE)
-    add_definitions(-D__LINUX__)
-    add_compile_definitions(__LINUX__=TRUE)
-endif()
+add_subdirectory(arma3mysqltest)

@@ -3,7 +3,8 @@
 
 #ifdef __APPLE__
 #define PATH "../arma3mysql/libarma3mysql.dylib"
-#elifdef __linux__
+#endif
+#ifdef __linux__
 #define PATH "../arma3mysql/libarma3mysql.so"
 #endif
 

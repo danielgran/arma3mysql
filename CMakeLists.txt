@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
 project(arma3mysql)
 set(CMAKE_CXX_STANDARD 23)
+
+include_directories(src lib)
 add_subdirectory(src)
