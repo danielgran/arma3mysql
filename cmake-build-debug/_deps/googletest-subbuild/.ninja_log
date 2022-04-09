@@ -1,0 +1,21 @@
+# ninja log v5
+0	173	1649499142198086690	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	9d2078dbc8c89ca2
+2659	2688	1649499144714674318	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	443fcd129c9a55df
+0	173	1649499142198086690	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	9d2078dbc8c89ca2
+2623	2659	1649499144684080577	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	12c8854980cabbf1
+2688	2731	1649499144756567547	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	a761542fc56cab50
+173	2623	1649499144649177816	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	f8c497745b583b1a
+2886	2943	1649499144968625069	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	50348c77ccf4df1e
+2659	2688	1649499144714674318	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	443fcd129c9a55df
+173	2623	1649499144649177816	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	f8c497745b583b1a
+2731	2789	1649499144815692522	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	74f7d27f9af76585
+2789	2846	1649499144869919651	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	181d8bff9c6cfc1c
+2847	2886	1649499144912467480	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	194d66573831476a
+2886	2943	1649499144968625069	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	50348c77ccf4df1e
+2731	2789	1649499144815692522	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	74f7d27f9af76585
+2847	2886	1649499144912467480	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	194d66573831476a
+2688	2731	1649499144756567547	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	a761542fc56cab50
+2623	2659	1649499144684080577	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	12c8854980cabbf1
+2886	2943	1649499144968625069	CMakeFiles/googletest-populate-complete	50348c77ccf4df1e
+2789	2846	1649499144869919651	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	181d8bff9c6cfc1c
+2886	2943	1649499144968625069	/Users/danielgran/Projects/arma3mysql/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	50348c77ccf4df1e
