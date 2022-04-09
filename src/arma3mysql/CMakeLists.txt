@@ -1,5 +1,6 @@
-include_directories(/usr/local/mysql-connector-c++-8.0.28/include)
-link_directories(/usr/local/mysql-connector-c++-8.0.28/lib64)
+include_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/include)
+link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64)
+link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64/private)
 #add_executable(arma3mysql library.cpp)
 
 add_library(arma3mysql SHARED library.cpp)
