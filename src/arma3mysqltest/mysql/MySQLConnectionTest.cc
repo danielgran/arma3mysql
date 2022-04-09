@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
-#include "src/arma3mysql/mysql/MySQLConnectionParam.h"
-#include "src/arma3mysql/mysql/MySQLConnection.h"
+#include "arma3mysql/mysql/MySQLConnectionParam.h"
+#include "arma3mysql/mysql/MySQLConnection.h"
 
 using namespace std;
 

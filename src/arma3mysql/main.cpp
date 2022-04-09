@@ -1,6 +1,8 @@
 #include "jdbc/cppconn/driver.h"
 #include "jdbc/cppconn/resultset.h"
 #include "jdbc/cppconn/statement.h"
+#include "arma3mysql/mysql/MySQLConnectionParam.h"
+#include "arma3mysql/mysql/MySQLConnection.h"
 #include <iostream>
 #include <cstring>
 
@@ -22,6 +24,7 @@ void RVExtension(char *output, int outputSize, const char *function) {
     return;
   }
 
+
   if(alreadyLaunched)
     strcpy(output, "I was not launched the first time");
   else {
@@ -29,4 +32,17 @@ void RVExtension(char *output, int outputSize, const char *function) {
     alreadyLaunched = 1;
 
   }
+}
+
+int main(){
+    char* return_value = (char*)malloc(100);
+    RVExtension(return_value, 100, "version");
+
+    printf("%s", return_value);
+    MySQLConnectionParam* params = new MySQLConnectionParam("localhost", 3306, "root", "");
+
+    MySQLConnection* connection = new MySQLConnection("arma3", params);
+
+    printf("%s", params->Password.c_str());
+
 }

@@ -3,9 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="arma3mysql" targetName="gmock" />
-      <config projectName="arma3mysql" targetName="arma3mysql_run" />
-      <config projectName="arma3mysql" targetName="hello_test" />
       <config projectName="arma3mysql" targetName="gtest" />
+      <config projectName="arma3mysql" targetName="arma3mysql_tst" />
       <config projectName="arma3mysql" targetName="gtest_main" />
       <config projectName="arma3mysql" targetName="arma3mysql_lib" />
       <config projectName="arma3mysql" targetName="gmock_main" />
@@ -17,24 +16,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a59c3c0e-b4bd-4680-b52d-ef704a31edcb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/arma3mysql/extension/Extension.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arma3mysql/mysql/MySQLConnection.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arma3mysql/mysql/MySQLConnection.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arma3mysql/mysql/MySQLConnectionParam.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arma3mysql/mysql/MySQLConnectionParam.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/arma3mysqltest/mysql/MySQLConnectionTest.cc" afterDir="false" />
+    <list default="true" id="a59c3c0e-b4bd-4680-b52d-ef704a31edcb" name="Changes" comment="Restructured">
+      <change afterPath="$PROJECT_DIR$/src/arma3mysqltest/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/arma3mysql/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysql/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arma3mysql/library.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysql/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-behaviour/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-behaviour/hello_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/hello_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-behaviour/library/string/helper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/library/string/helper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-behaviour/library/string/helper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/library/string/helper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-behaviour/library/testlib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-behaviour/library/testlib.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysql/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysql/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/hello_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/hello_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/mysql/MySQLConnectionTest.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/mysql/MySQLConnectionTest.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +36,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -93,6 +86,7 @@
     <property name="cmake.loaded.for.project" value="true" />
     <property name="ctest.advertisement.all.test.configuration.is.created" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test-behaviour/mysql" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
@@ -108,11 +102,28 @@
       <recent name="$PROJECT_DIR$/test-behaviour" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Pattern" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="hello_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="hello_test" TEST_MODE="PATTERN">
+  <component name="RunManager" selected="CMake Application.Library">
+    <configuration name="All in arma3mysql_tst" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Initialisation.Integration" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_CLASS="Initialisation" TEST_METHOD="Integration" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Initialisation_Integration_Test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_CLASS="Initialisation_Integration_Test" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Library" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
@@ -120,6 +131,31 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="arma3mysql_lib" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_lib" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_exe">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="arma3mysql_tst" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Library" />
+      <item itemvalue="CMake Application.arma3mysql_lib" />
+      <item itemvalue="CMake Application.arma3mysql_tst" />
+      <item itemvalue="Google Test.All in arma3mysql_tst" />
+      <item itemvalue="Google Test.Initialisation.Integration" />
+      <item itemvalue="Google Test.Initialisation_Integration_Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.Initialisation.Integration" />
+        <item itemvalue="CMake Application.arma3mysql_tst" />
+        <item itemvalue="Google Test.Initialisation_Integration_Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -140,7 +176,9 @@
       <workItem from="1649495278947" duration="4046000" />
       <workItem from="1649499490742" duration="110000" />
       <workItem from="1649503302249" duration="1852000" />
-      <workItem from="1649506440418" duration="7120000" />
+      <workItem from="1649506440418" duration="7999000" />
+      <workItem from="1649522256762" duration="380000" />
+      <workItem from="1649522652654" duration="4414000" />
     </task>
     <task id="LOCAL-00001" summary="Changes and build to so file">
       <created>1649427360662</created>
@@ -202,7 +240,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -221,19 +265,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/arma3mysqltest/hello_test.cc</url>
-          <line>12</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/arma3mysqltest/hello_test.cc</url>
-          <line>17</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/arma3mysqltest/hello_test.cc</url>
-          <line>6</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp</url>
+          <line>14</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
