@@ -1,16 +1,33 @@
-//
-// Created by Daniel Gran on 10.04.22.
-//
+#pragma once
 
-#ifndef ARMA3MYSQL_CONFIGURATIONADAPTER_H
-#define ARMA3MYSQL_CONFIGURATIONADAPTER_H
+#include "simpleini-4.19/SimpleIni.h"
+#include "arma3mysql/mysql/MySQLConnectionParam.h"
 
+using namespace std;
 
+namespace Configuration {
+    const string sampleData = "[SampleServer]\n"
+                              "hostname=127.0.0.1\n"
+                              "port=3306\n"
+                              "schema=arma3\n"
+                              "username=root\n"
+                              "password=\n";
 
-class ConfigurationAdapter {
+    const string sampleConfigName = "arma3mysql-configuration.cfg";
 
-};
+    class ConfigurationAdapter {
+    private:
+        CSimpleIniA *init;
+    public:
+        ConfigurationAdapter();
+        void SaveSampleConfig();
 
+        bool ConfigurationExistant();
 
+        void Initialize();
 
-#endif //ARMA3MYSQL_CONFIGURATIONADAPTER_H
+        vector<MySQLConnectionParam*>* LoadMySQLConfiguration();
+
+        void LoadConfiguration();
+    };
+}

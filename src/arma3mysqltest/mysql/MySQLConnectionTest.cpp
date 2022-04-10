@@ -6,7 +6,7 @@ using namespace std;
 
 TEST(Construction, UnitTest) {
 
-    MySQLConnectionParam* params = new MySQLConnectionParam("localhost", 3306, "root", "");
+    MySQLConnectionParam* params = new MySQLConnectionParam("localhost", 3306, "schema", "root", "");
 
     MySQLConnection* connection = new MySQLConnection("arma3", params);
 
