@@ -54,7 +54,7 @@ TEST(UnitTest_Configuration, TestLoadMySQLConfiguration) {
   ConfigurationAdapter (*config) = new ConfigurationAdapter();
   config->Initialize();
   config->LoadConfiguration();
-  vector<MySQLConnectionParam*>* params;
+  map<string, MySQLConnectionParam*>* params;
   params = config->LoadMySQLConfiguration();
 
   string first_hostname = (*params->at(0)).Hostname;

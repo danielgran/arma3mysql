@@ -31,11 +31,11 @@ void Configuration::ConfigurationAdapter::Initialize() {
     this->SaveSampleConfig();
 }
 
-vector<MySQLConnectionParam*>* Configuration::ConfigurationAdapter::LoadMySQLConfiguration() {
+map<string, MySQLConnectionParam*>* Configuration::ConfigurationAdapter::LoadMySQLConfiguration() {
   CSimpleIniA::TNamesDepend sections;
   init->GetAllSections(sections);
 
-  vector<MySQLConnectionParam*> *returnVector = new vector<MySQLConnectionParam*>();
+  map<string, MySQLConnectionParam*> *returnVector = new map<string, MySQLConnectionParam*>();
 
   for (auto a:sections) {
     string dbname = a.pItem;
@@ -52,7 +52,7 @@ vector<MySQLConnectionParam*>* Configuration::ConfigurationAdapter::LoadMySQLCon
                                                            schema,
                                                            username,
                                                            password);
-    returnVector->push_back(param);
+    returnVector->insert(pair<string, MySQLConnectionParam*>(dbname, param));
   }
 
   return returnVector;

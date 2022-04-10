@@ -3,11 +3,22 @@
 //
 
 #include "Extension.h"
-#include <cstring>
 #include <vector>
 #include "boost/algorithm/string.hpp"
 
+#include "../configuration/ConfigurationAdapter.h"
+
 const static string CMD_VERSION = "version";
+
+Extension::Extension() {
+  Configuration::ConfigurationAdapter *p = new Configuration::ConfigurationAdapter();
+  p->Initialize();
+  p->LoadConfiguration();
+  connectionParams = p->LoadMySQLConfiguration();
+  delete p;
+  connections = new map<string, MySQLConnection*>;
+}
+
 
 string Extension::GetVersion(void) {
   return "1.0";
@@ -21,10 +32,14 @@ string Extension::ProcessCommand(string command) {
   vector<string> args;
   boost::split(args, command, boost::is_any_of(" "));
 
-  if(args.at(0) == "database"){
-    if(args.at(1) == "add") {
+  if (args.at(0) == "database") {
+    if (args.at(1) == "connect") {
       string databaseConfigName = args.at(2);
-      // Resolve configuration
+      for (auto param: *connectionParams) {
+        //auto *connection = new MySQLConnection();
+        //if(param->)
+
+      }
       return "ok";
     }
   }

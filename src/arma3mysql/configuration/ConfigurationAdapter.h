@@ -26,7 +26,7 @@ namespace Configuration {
 
         void Initialize();
 
-        vector<MySQLConnectionParam*>* LoadMySQLConfiguration();
+        map<string, MySQLConnectionParam*>* LoadMySQLConfiguration();
 
         void LoadConfiguration();
     };
