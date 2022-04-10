@@ -17,7 +17,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a59c3c0e-b4bd-4680-b52d-ef704a31edcb" name="Changes" comment="Restructured">
-      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/library/testlib.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/INFO_BIN" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/INFO_SRC" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/build_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/connection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/datatype.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/driver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/exception.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/metadata.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/parameter_metadata.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/prepared_statement.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/resultset.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/resultset_metadata.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/sqlstring.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/statement.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/variant.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/version_info.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/cppconn/warning.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/mysql_connection.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/mysql_driver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/jdbc/mysql_error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysql/jdbc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common/api.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common/error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common/op_if.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common/settings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common/util.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common/value.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/common_constants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/collations.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/collection_crud.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/crud.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/detail/crud.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/detail/error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/detail/result.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/detail/row.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/detail/session.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/detail/settings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/document.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/executable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/mysql_charsets.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/mysql_collations.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/result.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/row.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/settings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/devapi/table_crud.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/xapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include/mysqlx/xdevapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libcrypto.1.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libcrypto.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn-static.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn.9.8.0.28.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn.9.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn8-static.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn8.2.8.0.28.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn8.2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libmysqlcppconn8.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libssl.1.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/libssl.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/private/libfido2.1.5.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/private/libfido2.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/private/libfido2.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/hello_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/hello_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,64 +160,22 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/googletest-macos-1.11.0/include" />
+      <recent name="$PROJECT_DIR$/lib/googletest-macos-1.11.0/include/gtest" />
+      <recent name="$PROJECT_DIR$/lib/googletest-macos-1.11.0" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/arma3mysql" />
-      <recent name="$PROJECT_DIR$/test-behaviour" />
     </key>
   </component>
-  <component name="RunManager" selected="Google Test.Initialisation.Integration">
-    <configuration name="All in arma3mysql_tst" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Initialisation.Integration" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_CLASS="Initialisation" TEST_METHOD="Integration" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Initialisation_Integration_Test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_CLASS="Initialisation_Integration_Test" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Library" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_lib" CONFIG_NAME="Debug">
+  <component name="RunManager">
+    <configuration name="arma3mysql_tst" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="arma3mysql_lib" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_lib" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_exe">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="arma3mysql_tst" type="CMakeRunConfiguration" factoryName="Application" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.Library" />
-      <item itemvalue="CMake Application.arma3mysql_lib" />
-      <item itemvalue="CMake Application.arma3mysql_tst" />
-      <item itemvalue="Google Test.All in arma3mysql_tst" />
-      <item itemvalue="Google Test.Initialisation.Integration" />
-      <item itemvalue="Google Test.Initialisation_Integration_Test" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.Initialisation.Integration" />
         <item itemvalue="CMake Application.arma3mysql_tst" />
-        <item itemvalue="Google Test.Initialisation_Integration_Test" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +201,8 @@
       <workItem from="1649506440418" duration="7999000" />
       <workItem from="1649522256762" duration="380000" />
       <workItem from="1649522652654" duration="5091000" />
+      <workItem from="1649576974702" duration="173000" />
+      <workItem from="1649577214915" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="Changes and build to so file">
       <created>1649427360662</created>

@@ -1,9 +1,22 @@
 set(BINARY ${CMAKE_PROJECT_NAME})
 
+if(LINUX)
+    message(Running_linux)
+    include_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/include)
+    link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64)
+    link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64/private)
+endif()
 
-include_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/include)
-link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64)
-link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64/private)
+if(APPLE)
+    message(Running_MacOS)
+
+    include_directories(${PROJECT_SOURCE_DIR}/lib/googletest-macos-1.11.0/include)
+    link_directories(${PROJECT_SOURCE_DIR}/lib/googletest-macos-1.11.0/lib)
+
+    include_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/include)
+    link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64)
+    link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-macos11-x86-64bit/lib64/private)
+endif()
 
 add_subdirectory(arma3mysql)
 add_subdirectory(arma3mysqltest)
