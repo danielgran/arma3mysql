@@ -26,7 +26,7 @@ void RVExtension(char *output, int outputSize, const char *function) {
   memcpy(output, returnValue.c_str(), returnValue.size());
 }
 
-void RVExtensionVersion(char* output, int outputSizte) {
+void RVExtensionVersion(char* output, int outputSize) {
   string returnValue;
   returnValue = Extension::GetVersion();
   memcpy(output, returnValue.c_str(), returnValue.size());
