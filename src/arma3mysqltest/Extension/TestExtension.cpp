@@ -3,22 +3,20 @@
 
 using namespace std;
 
-TEST(Extension, Construct) {
+TEST(UnitTest_Extension, Construct) {
   Extension *extension = new Extension();
 
   ASSERT_NE(extension, nullptr);
 }
 
 
-TEST(Extension, GetVersion) {
+TEST(UnitTest_Extension, GetVersion) {
   ASSERT_EQ("1.0", Extension::GetVersion());
 }
 
-TEST(Extension, ProcessCommand){
+TEST(UnitTest_Extension, ProcessCommand) {
   Extension *extension = new Extension();
-
   string ver = extension->ProcessCommand("version");
 
   ASSERT_EQ(ver, "1.0");
-
 }

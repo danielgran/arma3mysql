@@ -8,6 +8,4 @@ TEST(UnitTest_MySQLConnection, Construction) {
     MySQLConnectionParam* params = new MySQLConnectionParam("127.0.0.1", 3306, "arma3", "root", "");
     MySQLConnection* connection = new MySQLConnection(params);
     connection->Connect();
-
-    ASSERT_EQ(1, 1);
 }

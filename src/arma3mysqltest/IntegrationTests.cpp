@@ -4,7 +4,7 @@
 
 using namespace std;
 
-GTEST_TEST(Integration, GetVersion) {
+GTEST_TEST(IntegrationTest, GetVersion) {
   string callparam = "version";
   string a = testlib::callExtension(callparam);
 
@@ -12,7 +12,9 @@ GTEST_TEST(Integration, GetVersion) {
 }
 
 
-TEST(Integration, Connection) {
-    string callparam = "database connect SampleServer";
+TEST(IntegrationTest, Connection) {
+  string callparam = "database connect SampleServer";
+  string a = testlib::callExtension(callparam);
 
+  ASSERT_EQ(a, "ok");
 }
