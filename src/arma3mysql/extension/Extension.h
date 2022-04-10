@@ -4,12 +4,14 @@
 #include "../mysql/MySQLConnectionParam.h"
 #include "../mysql/MySQLConnection.h"
 
+
 using namespace std;
 
 class Extension {
 private:
-    map<string, MySQLConnectionParam *> *connectionParams;
-    map<string, MySQLConnection *> *connections;
+    static const string CMD_VERSION;
+    map<string, MySQLConnectionParam *> *ConnectionParams;
+    map<string, MySQLConnection *> *Connections;
 public:
     Extension();
 

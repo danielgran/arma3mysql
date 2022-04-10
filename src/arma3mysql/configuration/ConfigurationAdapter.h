@@ -18,6 +18,8 @@ namespace Configuration {
     class ConfigurationAdapter {
     private:
         CSimpleIniA *init;
+        void LoadSectionsFromFile(CSimpleIniTempl<char, SI_GenericNoCase<char>, SI_ConvertA<char>>::TNamesDepend &sections,
+                                  map<string, MySQLConnectionParam *> *returnVector) const;
     public:
         ConfigurationAdapter();
         void SaveSampleConfig();

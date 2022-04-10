@@ -7,8 +7,8 @@
 #include "jdbc/cppconn/resultset.h"
 #include "MySQLConnectionParam.h"
 
-using namespace std;
 
+using namespace std;
 
 class MySQLConnection {
 private:
@@ -19,7 +19,6 @@ public:
     MySQLConnection(MySQLConnectionParam *param);
 
     void Connect();
-
     void Disconnect();
 
     sql::ResultSet *executeQuery(string query);
