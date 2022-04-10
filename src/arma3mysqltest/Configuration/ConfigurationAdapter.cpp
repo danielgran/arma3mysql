@@ -57,6 +57,6 @@ TEST(UnitTest_Configuration, TestLoadMySQLConfiguration) {
   map<string, MySQLConnectionParam*>* params;
   params = config->LoadMySQLConfiguration();
 
-  string first_hostname = (*params->at(0)).Hostname;
+  string first_hostname = params->at("SampleServer")->Hostname;
   ASSERT_EQ(first_hostname, "127.0.0.1");
 }

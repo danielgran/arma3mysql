@@ -7,8 +7,7 @@
 #include "jdbc/cppconn/driver.h"
 
 
-MySQLConnection::MySQLConnection(string schema, MySQLConnectionParam *param) {
-  this->Schema = schema;
+MySQLConnection::MySQLConnection(MySQLConnectionParam *param) {
   this->connectionParam = param;
 }
 
@@ -18,7 +17,7 @@ void MySQLConnection::Connect() {
   string connectionString = boost::str(fmt);
   mysqlConnection = mysqlDriver->connect(connectionString.c_str(), connectionParam->Username,
                                          connectionParam->Password);
-  mysqlConnection->setSchema(Schema.c_str());
+  mysqlConnection->setSchema((*connectionParam).Schema);
 }
 
 void MySQLConnection::Disconnect() {

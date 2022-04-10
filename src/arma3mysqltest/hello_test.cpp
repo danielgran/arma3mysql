@@ -13,9 +13,6 @@ GTEST_TEST(Integration, GetVersion) {
 
 
 TEST(Integration, Connection) {
-    string callparam = "database add root@192.168.59.1";
-    string return_string = testlib::callExtension(callparam);
-
-    ASSERT_EQ(return_string, "ok");
+    string callparam = "database connect SampleServer";
 
 }

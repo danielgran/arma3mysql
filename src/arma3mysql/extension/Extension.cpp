@@ -16,7 +16,7 @@ Extension::Extension() {
   p->LoadConfiguration();
   connectionParams = p->LoadMySQLConfiguration();
   delete p;
-  connections = new map<string, MySQLConnection*>;
+  connections = new map<string, MySQLConnection *>;
 }
 
 
@@ -35,11 +35,11 @@ string Extension::ProcessCommand(string command) {
   if (args.at(0) == "database") {
     if (args.at(1) == "connect") {
       string databaseConfigName = args.at(2);
-      for (auto param: *connectionParams) {
-        //auto *connection = new MySQLConnection();
-        //if(param->)
 
-      }
+      auto connectionParam = connectionParams->at(databaseConfigName);
+      MySQLConnection* connection = new MySQLConnection(connectionParam);
+      connections->insert(pair<string, MySQLConnection*>(databaseConfigName, connection));
+      connection->Connect();
       return "ok";
     }
   }
