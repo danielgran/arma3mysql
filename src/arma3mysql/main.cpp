@@ -22,7 +22,7 @@ void RVExtension(char *output, int outputSize, const char *function) {
     alreadyLaunched = 1;
   }
   string returnValue;
-  returnValue = Main->ProcessCommand((string) output);
+  returnValue = Main->ProcessCommand((string) function);
   memcpy(output, returnValue.c_str(), returnValue.size());
 }
 
