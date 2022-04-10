@@ -6,13 +6,11 @@ using namespace std;
 
 TEST(Construction, UnitTest) {
 
-    check_lib();
-
-
     MySQLConnectionParam* params = new MySQLConnectionParam("localhost", 3306, "root", "");
 
     MySQLConnection* connection = new MySQLConnection("arma3", params);
 
+    connection->Connect();
 
 
 

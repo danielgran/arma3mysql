@@ -19,8 +19,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a59c3c0e-b4bd-4680-b52d-ef704a31edcb" name="Changes" comment="Restructured">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/arma3mysql/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysql/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/arma3mysqltest/mysql/MySQLConnectionTest.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/arma3mysqltest/mysql/MySQLConnectionTest.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +97,16 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.arma3mysql_runs">
+  <component name="RunManager" selected="CMake Application.arma3mysql_tst">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Construction.UnitTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_tst" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_tst" TEST_CLASS="Construction" TEST_METHOD="UnitTest" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="arma3mysql_runs" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="arma3mysql" TARGET_NAME="arma3mysql_runs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="arma3mysql" RUN_TARGET_NAME="arma3mysql_runs">
@@ -116,9 +122,11 @@
     <list>
       <item itemvalue="CMake Application.arma3mysql_runs" />
       <item itemvalue="CMake Application.arma3mysql_tst" />
+      <item itemvalue="Google Test.Construction.UnitTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.Construction.UnitTest" />
         <item itemvalue="CMake Application.arma3mysql_tst" />
       </list>
     </recent_temporary>
