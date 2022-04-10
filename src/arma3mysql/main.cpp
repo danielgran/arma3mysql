@@ -39,12 +39,17 @@ int main(){
     RVExtension(return_value, 100, "version");
 
     printf("%s", return_value);
-    MySQLConnectionParam* params = new MySQLConnectionParam("127.0.0.1", 3306, "root", "");
+    MySQLConnectionParam* params = new MySQLConnectionParam("192.168.59.1", 3306, "root", "");
 
     MySQLConnection* connection = new MySQLConnection("arma3", params);
     connection->Connect();
 
     printf("%s", params->Username.c_str());
+
+
+    string s;
+    cin >> s;
+
 
 
 

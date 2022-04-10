@@ -2,9 +2,10 @@ set(BINARY ${CMAKE_PROJECT_NAME})
 
 if(LINUX)
     message(Running_linux)
-    include_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/include)
-    link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64)
-    link_directories(${PROJECT_SOURCE_DIR}/lib/mysql-connector-c++-8.0.28-linux/lib64/private)
+    # apt install libmysqlcppconn-dev "libboost-dev"
+    # sudo ln -s /usr/lib/x86_64-linux-gnu/libssl.so.1.1 libssl.1.1.so
+    include_directories(/usr/include/mysql-cppconn-8)
+    link_directories(/usr/lib/x86_64-linux-gnu)
 endif()
 
 if(APPLE)
