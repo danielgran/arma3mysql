@@ -5,10 +5,8 @@
 #include "../configuration/ConfigurationAdapter.h"
 
 
-const string Extension::CMD_VERSION = "version";
-
 Extension::Extension() {
-  Configuration::ConfigurationAdapter *p = new Configuration::ConfigurationAdapter();
+  auto *p = new Configuration::ConfigurationAdapter();
   p->Initialize();
   p->LoadConfiguration();
   ConnectionParams = p->LoadMySQLConfiguration();
@@ -16,19 +14,18 @@ Extension::Extension() {
   Connections = new map<string, MySQLConnection *>;
 }
 
-
-string Extension::GetVersion(void) {
+string Extension::GetVersion() {
   return "1.0";
 }
 
 string Extension::ProcessCommand(string command) {
-  if (command == CMD_VERSION) {
-    return GetVersion();
-  }
-
   try {
     vector<string> args;
     boost::split(args, command, boost::is_any_of(" "));
+
+    if (args.at(0) == "version") {
+      return GetVersion();
+    }
 
     if (args.at(0) == "database") {
       if (args.at(1) == "connect") {
