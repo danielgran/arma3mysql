@@ -7,7 +7,7 @@ using namespace std;
 
 namespace Configuration {
     const string sampleData = "[SampleServer]\n"
-                              "hostname=127.0.0.1\n"
+                              "hostname=192.168.59.1\n"
                               "port=3306\n"
                               "schema=arma3\n"
                               "username=root\n"
