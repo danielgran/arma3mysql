@@ -23,13 +23,13 @@ void RVExtension(char *output, int outputSize, const char *function) {
   }
   string returnValue;
   returnValue = Main->ProcessCommand((string) function);
-  memcpy(output, returnValue.c_str(), returnValue.size());
+  strcpy(output, returnValue.c_str());
 }
 
 void RVExtensionVersion(char *output, int outputSize) {
   string returnValue;
   returnValue = Extension::GetVersion();
-  memcpy(output, returnValue.c_str(), returnValue.size());
+  strcpy(output, returnValue.c_str());
 }
 
 

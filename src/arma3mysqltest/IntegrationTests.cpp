@@ -4,7 +4,7 @@
 
 using namespace std;
 
-GTEST_TEST(IntegrationTest, GetVersion) {
+TEST(IntegrationTest, GetVersion) {
   string callparam = "version";
   string a = testlib::callExtension(callparam);
 

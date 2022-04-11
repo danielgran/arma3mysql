@@ -5,6 +5,6 @@
 using namespace std;
 
 namespace testlib{
-    string callExtension(string&);
+    string callExtension(string);
 }
 
