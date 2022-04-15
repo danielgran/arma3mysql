@@ -35,6 +35,6 @@ void RVExtensionVersion(char *output, int outputSize) {
 
 int main() {
   char *return_value = (char *) malloc(10000);
-  RVExtension(return_value, 1000, "version");
+  RVExtension(return_value, 20000, "version");
   printf("%s", return_value);
 }

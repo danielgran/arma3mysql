@@ -20,7 +20,9 @@ void MySQLConnection::Disconnect() {
   delete mysqlConnection;
 }
 
-sql::ResultSet *MySQLConnection::executeQuery(string query) {
+sql::ResultSet* MySQLConnection::executeQuery(string query) {
+  if(!mysqlConnection)
+    Connect();
   sql::Statement *statement = this->mysqlConnection->createStatement();
   return statement->executeQuery(query);
 }
