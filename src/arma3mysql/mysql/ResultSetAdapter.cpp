@@ -34,9 +34,9 @@ ArmA3ExtensionResult *MySQL::ResultSetAdapter::GetResult() {
       string typeAsString = meta->getColumnTypeName(i);
       string valueAsString = MySQLResultSet->getString(i);
 
-      if (typeAsString == "VARCHAR")
+      if (typeAsString == "VARCHAR" or typeAsString == "TEXT")
         armaReturnString.append("\"" + valueAsString + "\"");
-      else if (typeAsString == "BIGINT")
+      else if (typeAsString == "INT" or typeAsString == "BIGINT")
         armaReturnString.append(valueAsString);
       else if (typeAsString == "DECIMAL")
         armaReturnString.append(toDigits(valueAsString, 4));
@@ -62,8 +62,10 @@ ArmA3ExtensionResult *MySQL::ResultSetAdapter::GetResult() {
 
       }
 
-      armaReturnString.append("],");
+      armaReturnString.append(",");
     }
+    armaReturnString.pop_back();
+    armaReturnString.append("],");
   }
   armaReturnString.pop_back();
   armaReturnString += "]";

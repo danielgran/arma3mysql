@@ -51,3 +51,11 @@ TEST(IntegrationTest, QueryTestDate) {
   ASSERT_EQ(result, "[[[2012,1,1]]]");
 }
 
+TEST(IntegrationTest, QueryMixedData) {
+  string callparam = "database connect SampleServer";
+  string result = testlib::callExtension(callparam);
+  callparam = "database query SampleServer ###select * from new_table;###";
+  result = testlib::callExtension(callparam);
+  ASSERT_EQ(result, "[[1,1,\"asdf\"]]");
+}
+
