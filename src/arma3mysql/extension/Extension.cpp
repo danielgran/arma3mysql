@@ -6,7 +6,6 @@
 
 #include "../configuration/ConfigurationAdapter.h"
 #include "../mysql/ResultSetAdapter.h"
-#include "ArmA3ExtensionResult.h"
 
 
 Extension::Extension() {

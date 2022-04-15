@@ -40,13 +40,14 @@ TEST(IntegrationTest, QueryTestFloat) {
   string result = testlib::callExtension(callparam);
   callparam = "database query SampleServer ###SELECT 1.3 as message;###";
   result = testlib::callExtension(callparam);
-  ASSERT_EQ(result, "[[1.3]]");
+  ASSERT_EQ(result, "[[1.3000]]");
 }
 
-TEST(IntegrationTest, QueryTestDatetime) {
+TEST(IntegrationTest, QueryTestDate) {
   string callparam = "database connect SampleServer";
   string result = testlib::callExtension(callparam);
-  callparam = "database query SampleServer ###SELECT from_unixtime(0) as message;###";
+  callparam = "database query SampleServer ###select CAST(\"2012-1-1\" as date);###";
   result = testlib::callExtension(callparam);
-  ASSERT_EQ(result, "[[1970, 1, 1, 0, 0, 0]]");
+  ASSERT_EQ(result, "[[[2012,1,1]]]");
 }
+
