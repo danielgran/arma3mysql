@@ -1,2 +1,0 @@
-/usr/bin/ar qc libarma3mysql_lib.a  CMakeFiles/arma3mysql_lib.dir/configuration/ConfigurationAdapter.cpp.o CMakeFiles/arma3mysql_lib.dir/extension/ArmA3ExtensionResult.cpp.o CMakeFiles/arma3mysql_lib.dir/extension/Extension.cpp.o CMakeFiles/arma3mysql_lib.dir/main.cpp.o CMakeFiles/arma3mysql_lib.dir/mysql/MySQLConnection.cpp.o CMakeFiles/arma3mysql_lib.dir/mysql/MySQLConnectionParam.cpp.o CMakeFiles/arma3mysql_lib.dir/mysql/ResultSetAdapter.cpp.o
-/usr/bin/ranlib libarma3mysql_lib.a
