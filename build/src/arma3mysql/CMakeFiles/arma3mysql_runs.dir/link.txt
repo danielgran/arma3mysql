@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/arma3mysql_runs.dir/main.cpp.o  -o arma3mysql_runs  libarma3mysql_lib.a -lmysqlcppconn -lssl.1.1 
