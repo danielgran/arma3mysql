@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install Dependencies
-      run: sudo su && apt install -y wget && wget https://dev.mysql.com/get/Downloads/Connector-C++/libmysqlcppconn9_8.0.28-1debian11_amd64.deb && dpkg -i libmysqlcppconn9_8.0.28-1debian11_amd64.deb && apt update && apt upgrade -y && apt install -y libmysqlcppconn-dev
+      run: sudo apt install -y wget && wget https://dev.mysql.com/get/Downloads/Connector-C++/libmysqlcppconn9_8.0.28-1debian11_amd64.deb && sudo dpkg -i libmysqlcppconn9_8.0.28-1debian11_amd64.deb && sudo apt update && sudo apt upgrade -y && sudo apt install -y libmysqlcppconn-dev
     - name: Build
       run: mkdir -p build && cd build && cmake .. && make . && cmake --build .
