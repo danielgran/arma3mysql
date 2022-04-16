@@ -17,3 +17,9 @@ jobs:
       run: wget https://repo.mysql.com/mysql-apt-config_0.8.22-1_all.deb && sudo dpkg -i -E mysql-apt-config_0.8.22-1_all.deb && sudo apt update && sudo apt install -y libmysqlcppconn-dev libboost-all-dev libgtest-dev && sudo cp /usr/lib/x86_64-linux-gnu/libssl.so.1.1 /usr/lib/libssl.1.1.so
     - name: Build
       run: mkdir -p build && cd build && cmake .. && make . && cmake --build .
+    - name: Store artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: linux-x64
+        path: build/src/arma3mysql/A3MySQL_x64.so
+        retention-days: 14
