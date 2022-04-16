@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install Dependencies
-      run: apt update && apt install -y sudo && \
+      run: apt install -y sudo && \
            sudo apt install -y lsb-release gnupg wget && \
            sudo export DEBIAN_FRONTEND="noninteractive" && \
            sudo wget https://repo.mysql.com/mysql-apt-config_0.8.22-1_all.deb && \
