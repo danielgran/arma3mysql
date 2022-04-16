@@ -14,14 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install Dependencies
-      run: apt install -y sudo && \
-           sudo apt install -y lsb-release gnupg wget && \
-           sudo export DEBIAN_FRONTEND="noninteractive" && \
-           sudo wget https://repo.mysql.com/mysql-apt-config_0.8.22-1_all.deb && \
-           sudo dpkg -i -E mysql-apt-config_0.8.22-1_all.deb && \
-           sudo apt update && \
-           sudo apt upgrade -y && \
-           sudo apt install -y libtbb2 libmysqlcppconn-dev mysql-shell mysql-client && \
-           sudo cp /usr/lib/x86_64-linux-gnu/*.so /lib
+      run: apt install -y sudo && wget https://repo.mysql.com/mysql-apt-config_0.8.22-1_all.deb
     - name: Build
       run: mkdir -p build && cd build && cmake .. && make . && cmake --build .
