@@ -33,12 +33,19 @@ string Extension::ProcessCommand(string command) {
     if (args.at(0) == "database") {
       if (args.at(1) == "connect") {
         string databaseConfigName = args.at(2);
-
         auto *connectionParam = ConnectionParams->at(databaseConfigName);
         auto *connection = new MySQLConnection(connectionParam);
-        Connections->insert(pair<string, MySQLConnection *>(databaseConfigName, connection));
-        connection->Connect();
-        return "ok";
+        try {
+          Connections->insert(pair<string, MySQLConnection *>(databaseConfigName, connection));
+          connection->Connect();
+          return "ok";
+        }
+        catch (exception e) {
+          string errorstring = "Error connecting to databaseConfigName=" + databaseConfigName + " to " +
+              connectionParam->Username + "@" + connectionParam->Hostname + ":" + to_string(connectionParam->Port) +
+              " identified by " + connectionParam->Password + " at schema " + connectionParam->Schema;
+          return errorstring;
+        }
       }
       if (args.at(1) == "query") {
         string databaseConfigName = args.at(2);
@@ -58,8 +65,8 @@ string Extension::ProcessCommand(string command) {
 
       }
     }
-  } catch (exception &e) {
-    return "error";
+  } catch (exception e) {
+    return "Undefined error";
   }
   return "Unknown command.";
 }
