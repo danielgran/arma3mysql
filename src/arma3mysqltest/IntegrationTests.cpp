@@ -52,10 +52,11 @@ TEST(IntegrationTest, QueryTestDate) {
 }
 
 TEST(IntegrationTest, QueryMixedData) {
+  //1,ALTIS LIFE SERVER#01 ONE-UNIT.NET JOIN NOW TO GET STARTED,1,127.0.0.1,,2304
   string callparam = "database connect SampleServer";
   string result = testlib::callExtension(callparam);
-  callparam = "database query SampleServer ###select * from new_table;###";
+  callparam = "database query SampleServer ###select * from list_servers;###";
   result = testlib::callExtension(callparam);
-  ASSERT_EQ(result, "[[1,1,\"asdf\"]]");
+  ASSERT_EQ(result, "[[1,\"ALTIS LIFE SERVER#01 ONE-UNIT.NET JOIN NOW TO GET STARTED\",1,\"127.0.0.1\",objNull,2304]]");
 }
 

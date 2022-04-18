@@ -58,5 +58,5 @@ TEST(UnitTest_Configuration, TestLoadMySQLConfiguration) {
   params = config->LoadMySQLConfiguration();
 
   string first_hostname = params->at("SampleServer")->Hostname;
-  ASSERT_EQ(first_hostname, "127.0.0.1");
+  ASSERT_EQ(first_hostname, "192.168.59.1");
 }

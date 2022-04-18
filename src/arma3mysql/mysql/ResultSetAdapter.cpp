@@ -34,9 +34,11 @@ ArmA3ExtensionResult *MySQL::ResultSetAdapter::GetResult() {
       string typeAsString = meta->getColumnTypeName(i);
       string valueAsString = MySQLResultSet->getString(i);
 
-      if (typeAsString == "VARCHAR" or typeAsString == "TEXT")
+      if(MySQLResultSet->isNull(i))
+        armaReturnString.append("objNull");
+      else if (typeAsString == "VARCHAR" or typeAsString == "TEXT")
         armaReturnString.append("\"" + valueAsString + "\"");
-      else if (typeAsString == "INT" or typeAsString == "BIGINT")
+      else if (typeAsString == "INT" or typeAsString == "INT UNSIGNED" or typeAsString == "BIGINT")
         armaReturnString.append(valueAsString);
       else if (typeAsString == "DECIMAL")
         armaReturnString.append(toDigits(valueAsString, 4));
