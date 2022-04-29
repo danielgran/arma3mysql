@@ -31,8 +31,8 @@ ArmA3ExtensionResult *MySQL::ResultSetAdapter::GetResult() {
     auto meta = MySQLResultSet->getMetaData();
 
     for (int i = 1; i <= meta->getColumnCount(); i++) {
-      string typeAsString = meta->getColumnTypeName(i);
-      string valueAsString = MySQLResultSet->getString(i);
+      string typeAsString = (string)meta->getColumnTypeName(i);
+      string valueAsString = (string)MySQLResultSet->getString(i);
 
       if(MySQLResultSet->isNull(i))
         armaReturnString.append("objNull");

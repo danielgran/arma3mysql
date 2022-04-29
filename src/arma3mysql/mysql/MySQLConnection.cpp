@@ -1,11 +1,11 @@
 #include "MySQLConnection.h"
 #include "boost/format.hpp"
-#include "jdbc/cppconn/driver.h"
+#include "mariadb/conncpp/Driver.hpp"
 
 
 MySQLConnection::MySQLConnection(MySQLConnectionParam *param) {
   this->connectionParam = param;
-  this->mysqlDriver = get_driver_instance();
+  this->mysqlDriver = sql::mariadb::get_driver_instance();
 }
 
 void MySQLConnection::Connect() {

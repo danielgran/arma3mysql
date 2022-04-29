@@ -1,10 +1,10 @@
 #pragma once
 
 #include <string>
-#include "jdbc/cppconn/driver.h"
-#include "jdbc/cppconn/connection.h"
-#include "jdbc/cppconn/statement.h"
-#include "jdbc/cppconn/resultset.h"
+#include "mariadb/conncpp/Driver.hpp"
+#include "mariadb/conncpp/Connection.hpp"
+#include "mariadb/conncpp/Statement.hpp"
+#include "mariadb/conncpp/ResultSet.hpp"
 #include "MySQLConnectionParam.h"
 
 

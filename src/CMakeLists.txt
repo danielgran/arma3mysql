@@ -2,9 +2,7 @@ set(BINARY ${CMAKE_PROJECT_NAME})
 
 if(LINUX)
     message(Running_linux)
-    # apt install libmysqlcppconn-dev "libboost-dev"
-    # sudo ln -s /usr/lib/x86_64-linux-gnu/libssl.so.1.1 libssl.1.1.so
-    include_directories(/usr/include/mysql-cppconn-8)
+    include_directories(/usr/include/mariadb)
     link_directories(/usr/lib/x86_64-linux-gnu)
 endif()
 
