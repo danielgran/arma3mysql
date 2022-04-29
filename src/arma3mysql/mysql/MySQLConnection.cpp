@@ -17,11 +17,8 @@ void MySQLConnection::Connect() {
                                          connectionParam->Password);
   mysqlConnection->setSchema((*connectionParam).Schema);
   } catch (sql::SQLException& e) {
-    int a = 123;
-    a++;
+    return;
   }
-
-
 }
 
 void MySQLConnection::Disconnect() {
