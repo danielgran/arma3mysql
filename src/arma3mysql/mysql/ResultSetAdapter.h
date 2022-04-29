@@ -1,6 +1,6 @@
 #pragma once
 
-#include "mariadb/conncpp/conncpp.hpp"
+#include "mariadb/conncpp.hpp"
 #include "arma3mysql/extension/ArmA3ExtensionResult.h"
 
 using namespace sql;

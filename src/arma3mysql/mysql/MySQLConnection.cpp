@@ -1,6 +1,6 @@
 #include "MySQLConnection.h"
 #include "boost/format.hpp"
-#include "mariadb/conncpp/Driver.hpp"
+#include "mariadb/conncpp.hpp"
 
 
 MySQLConnection::MySQLConnection(MySQLConnectionParam *param) {
@@ -9,11 +9,19 @@ MySQLConnection::MySQLConnection(MySQLConnectionParam *param) {
 }
 
 void MySQLConnection::Connect() {
-  boost::format fmt = boost::format("tcp://%1%:%2%") % this->connectionParam->Hostname % this->connectionParam->Port;
+  try {
+
+  boost::format fmt = boost::format("jdbc:mariadb://%1%:%2%/%3%") % this->connectionParam->Hostname % this->connectionParam->Port % this->connectionParam->Hostname;
   string connectionString = boost::str(fmt);
   mysqlConnection = mysqlDriver->connect(connectionString.c_str(), connectionParam->Username,
                                          connectionParam->Password);
   mysqlConnection->setSchema((*connectionParam).Schema);
+  } catch (sql::SQLException& e) {
+    int a = 123;
+    a++;
+  }
+
+
 }
 
 void MySQLConnection::Disconnect() {
