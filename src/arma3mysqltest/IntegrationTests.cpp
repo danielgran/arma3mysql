@@ -60,3 +60,11 @@ TEST(IntegrationTest, QueryMixedData) {
   ASSERT_EQ(result, "[[1,\"ALTIS LIFE SERVER#01 ONE-UNIT.NET JOIN NOW TO GET STARTED\",1,\"127.0.0.1\",objNull,2304]]");
 }
 
+TEST(IntegrationTest, QueryEmptyData) {
+  string callparam = "database connect SampleServer";
+  string result = testlib::callExtension(callparam);
+  callparam = "database query SampleServer ###select id from players where 1=2;###";
+  result = testlib::callExtension(callparam);
+  ASSERT_EQ(result, "[]");
+
+}

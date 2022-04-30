@@ -82,7 +82,9 @@ ArmA3ExtensionResult *MySQL::ResultSetAdapter::GetResult() {
     armaReturnString.pop_back();
     armaReturnString.append("],");
   }
-  armaReturnString.pop_back();
+  if (boost::count(armaReturnString, ',')>0) {
+    armaReturnString.pop_back();
+  }
   armaReturnString += "]";
   return new ArmA3ExtensionResult(armaReturnString);
 
