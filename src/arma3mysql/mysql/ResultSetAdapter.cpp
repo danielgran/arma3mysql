@@ -4,6 +4,7 @@
 #include <iomanip>
 
 #include "boost/algorithm/string.hpp"
+#include "boost/range/algorithm/count.hpp"
 
 using namespace std;
 
@@ -31,14 +32,26 @@ ArmA3ExtensionResult *MySQL::ResultSetAdapter::GetResult() {
     auto meta = MySQLResultSet->getMetaData();
 
     for (int i = 1; i <= meta->getColumnCount(); i++) {
-      string typeAsString = (string)meta->getColumnTypeName(i);
+
+      string columnTypeName = (string)meta->getColumnTypeName(i);
+      int doublePointCount = (int)boost::count(columnTypeName, ':');
+      string typeAsString;
+      if(doublePointCount > 0) {
+        vector<string> stringArgs;
+        boost::split(stringArgs, (string)meta->getColumnTypeName(i), boost::is_any_of(":"));
+        typeAsString = stringArgs.at(2);
+      } else {
+        typeAsString = columnTypeName;
+      }
       string valueAsString = (string)MySQLResultSet->getString(i);
+
+
 
       if(MySQLResultSet->isNull(i))
         armaReturnString.append("objNull");
       else if (typeAsString == "VARCHAR" or typeAsString == "TEXT")
         armaReturnString.append("\"" + valueAsString + "\"");
-      else if (typeAsString == "INT" or typeAsString == "INT UNSIGNED" or typeAsString == "BIGINT")
+      else if (typeAsString == "INTEGER" or typeAsString == "INTEGER UNSIGNED" or typeAsString == "BIGINT")
         armaReturnString.append(valueAsString);
       else if (typeAsString == "DECIMAL")
         armaReturnString.append(toDigits(valueAsString, 4));
